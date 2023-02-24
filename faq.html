@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Little Fashion</title>
+</head>
+<body>
+    <header>
+        <div class="burger">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#">
+                <h2><span class="highlight">Little </span><span class="hover">Fashion</span></h2>
+            </a>
+        </div>
+        <ul>
+            <a href="./index.html"><li class="hover">Home</li></a>
+            <a href="./story.html" rel="noopener noreferrer"><li class="hover">Story</li></a>
+            <a href="./product.html" rel="noopener noreferrer"><li class="hover">Products</li></a>
+             <a href="./faq.html" rel="noopener noreferrer"><li class="hover active">FAQs</li></a>
+             <a href="./contact.html" rel="noopener noreferrer"><li class="hover">Contact</li></a>
+        </ul>
+        <span class="icons">
+            <a href="./login.html"><i class="fa fa-user-o fa-lg hover" aria-hidden="true"></i></a>
+            <a href="./product.html"><i class="fa fa-shopping-bag fa-lg hover" aria-hidden="true"></i></a>
+        </span>
+    </header>
+    <div class="drop_down">
+        <ul>
+            <a href="./index.html"><li class="hover">Home</li></a>
+            <a href="./story.html" rel="noopener noreferrer"><li class="hover">Story</li></a>
+            <a href="./product.html" rel="noopener noreferrer"><li class="hover">Products</li></a>
+             <a href="./faq.html" rel="noopener noreferrer"><li class="hover active">FAQs</li></a>
+             <a href="./contact.html" rel="noopener noreferrer"><li class="hover">Contact</li></a>
+        </ul>
+    </div>
+    <div class="blue blue3" style="height: 550px;">
+            <div class="text-here enna">
+                <h1><span class="highlight"> Your favorite questions</span><br> and our answers to them</h2>
+        </div>
+    </div>
+    <div class="general">
+        <div class="main">
+            <h1>General Info.</h1>
+            <div class="q-outer">
+                <div class="question">
+                    <div class="q" id="q"  onclick="dropdown(1)">
+                        What is this Little Fashion?
+                        <img  id ="ico1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABIklEQVR4nO2OsStFARSHz0MRJYMkKYNSMiiTMonJIsNbpF4Znte95/vd23vKeMskk81kM5j8Aa9MBouipJRSlIh/QlcGisdz73i/Oss5v/OdY1ZQkBngwt0XLWckLaRuc/c5SS+SVnKULwGvwPx7I47jGeBZ0lpWObAs6QmY/TKIomgSeADWM3y+KunR3ae/DYRhOAHcu7valbv7RiqP43iqZTAIgjHgFths43OXdAeM/2khCIJh4ErSzm9ZYAu4AUatHWq12pCkS0m7Zlb6Qb4t6ToMwxH7D1EUDUg6A/aTJOn4NCoBe5LO6/X6oGWh0Wj0STqRdJgkSVe5XO6UdACcAv2WB9VqtRdoAkcf1UwPW54A3cBxWpVKpSdXeUGBteIN5VZ7RUJH1ZUAAAAASUVORK5CYII=">
+                    </div>
+                    <div class="answer" id="show1">
+                        Little Fashion is free Bootstrap 5 website template for everyone. There are 8 HTML pages included in this template and you can expand more pages as you need. <br><br>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="q" id="q"  onclick="dropdown(2)">
+                        What is Tooplate website?
+                        <img  id ="ico2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABIklEQVR4nO2OsStFARSHz0MRJYMkKYNSMiiTMonJIsNbpF4Znte95/vd23vKeMskk81kM5j8Aa9MBouipJRSlIh/QlcGisdz73i/Oss5v/OdY1ZQkBngwt0XLWckLaRuc/c5SS+SVnKULwGvwPx7I47jGeBZ0lpWObAs6QmY/TKIomgSeADWM3y+KunR3ae/DYRhOAHcu7valbv7RiqP43iqZTAIgjHgFths43OXdAeM/2khCIJh4ErSzm9ZYAu4AUatHWq12pCkS0m7Zlb6Qb4t6ToMwxH7D1EUDUg6A/aTJOn4NCoBe5LO6/X6oGWh0Wj0STqRdJgkSVe5XO6UdACcAv2WB9VqtRdoAkcf1UwPW54A3cBxWpVKpSdXeUGBteIN5VZ7RUJH1ZUAAAAASUVORK5CYII=">
+                    </div>
+                    <div class="answer" id="show2">
+                        Tooplate is a great website to download free HTML website templates for your business or personal use. Tooplate website has been online for almost 8 years now. Thank you for visiting our website.
+                    </div>
+                    <div class="q" id="q"  onclick="dropdown(3)">
+                        How do I support your website?
+                        <img  id ="ico3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABIklEQVR4nO2OsStFARSHz0MRJYMkKYNSMiiTMonJIsNbpF4Znte95/vd23vKeMskk81kM5j8Aa9MBouipJRSlIh/QlcGisdz73i/Oss5v/OdY1ZQkBngwt0XLWckLaRuc/c5SS+SVnKULwGvwPx7I47jGeBZ0lpWObAs6QmY/TKIomgSeADWM3y+KunR3ae/DYRhOAHcu7valbv7RiqP43iqZTAIgjHgFths43OXdAeM/2khCIJh4ErSzm9ZYAu4AUatHWq12pCkS0m7Zlb6Qb4t6ToMwxH7D1EUDUg6A/aTJOn4NCoBe5LO6/X6oGWh0Wj0STqRdJgkSVe5XO6UdACcAv2WB9VqtRdoAkcf1UwPW54A3cBxWpVKpSdXeUGBteIN5VZ7RUJH1ZUAAAAASUVORK5CYII=">
+                    </div>
+                    <div class="answer" id="show3">
+                        You can support our Tooplate website by sharing it to your friends or colleagues on the web or social media.
+                    </div>
+                </div>
+            </div class="q-outer">
+            <h1>About <span class="highlight"> our products</span></h1>
+            <div class="q-outer">
+                <div class="question">
+                    <div class="q" id="q"  onclick="dropdown(4)">
+                        What is Fashion Design?
+                        <img  id ="ico4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABIklEQVR4nO2OsStFARSHz0MRJYMkKYNSMiiTMonJIsNbpF4Znte95/vd23vKeMskk81kM5j8Aa9MBouipJRSlIh/QlcGisdz73i/Oss5v/OdY1ZQkBngwt0XLWckLaRuc/c5SS+SVnKULwGvwPx7I47jGeBZ0lpWObAs6QmY/TKIomgSeADWM3y+KunR3ae/DYRhOAHcu7valbv7RiqP43iqZTAIgjHgFths43OXdAeM/2khCIJh4ErSzm9ZYAu4AUatHWq12pCkS0m7Zlb6Qb4t6ToMwxH7D1EUDUg6A/aTJOn4NCoBe5LO6/X6oGWh0Wj0STqRdJgkSVe5XO6UdACcAv2WB9VqtRdoAkcf1UwPW54A3cBxWpVKpSdXeUGBteIN5VZ7RUJH1ZUAAAAASUVORK5CYII=">
+                    </div>
+                    <div class="answer"  id="show4" >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+                    <div class="q" id="q"  onclick="dropdown(5)">
+                        How do I use the product?
+                        <img  id ="ico5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABIklEQVR4nO2OsStFARSHz0MRJYMkKYNSMiiTMonJIsNbpF4Znte95/vd23vKeMskk81kM5j8Aa9MBouipJRSlIh/QlcGisdz73i/Oss5v/OdY1ZQkBngwt0XLWckLaRuc/c5SS+SVnKULwGvwPx7I47jGeBZ0lpWObAs6QmY/TKIomgSeADWM3y+KunR3ae/DYRhOAHcu7valbv7RiqP43iqZTAIgjHgFths43OXdAeM/2khCIJh4ErSzm9ZYAu4AUatHWq12pCkS0m7Zlb6Qb4t6ToMwxH7D1EUDUg6A/aTJOn4NCoBe5LO6/X6oGWh0Wj0STqRdJgkSVe5XO6UdACcAv2WB9VqtRdoAkcf1UwPW54A3cBxWpVKpSdXeUGBteIN5VZ7RUJH1ZUAAAAASUVORK5CYII=">
+                    </div>
+                    <div class="answer" id="show5">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <footer>
+        <div class="1">
+            <ul>
+                <li>
+                    <h3>Little Fashion</h3>
+                </li>
+                <li>
+                    Copyright © 2022 Little Fashion
+                </li>
+                <li>
+                    Designed by Tooplate
+                </li>
+            </ul>
+        </div>
+        <div class="2">
+            <ul>
+                <li>
+        <h3>Sitemap</h3>
+
+    </li>
+    <li>
+
+        Story
+    </li>
+    <li>
+
+        Products
+    </li>
+    <li>
+
+        Privacy policy
+    </li>
+    <li>
+
+        FAQs
+    </li>
+    <li>
+        Contact
+    </li>
+</ul>
+        </div>
+        <div class="three">
+            <ul>
+                <li>
+                    <h3>Social</h3>
+                </li>
+                <div class="social">
+                    <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                </div>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
