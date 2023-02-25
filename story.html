@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Little Fashion</title>
 </head>
 
 <body>
+    <div class="loading">
+        <img src="./images/loading3.gif" alt="loading...">
+    </div>
     <header>
         <div class="burger">
             <div class="container" onclick="myFunction(this)">
@@ -25,11 +30,21 @@
             </a>
         </div>
         <ul>
-            <a href="./index.html"><li class="hover">Home</li></a>
-            <a href="./story.html" rel="noopener noreferrer"><li class="hover active">Story</li></a>
-            <a href="./product.html" rel="noopener noreferrer"><li class="hover">Products</li></a>
-             <a href="./faq.html" rel="noopener noreferrer"><li class="hover">FAQs</li></a>
-             <a href="./contact.html" rel="noopener noreferrer"><li class="hover">Contact</li></a>
+            <a href="./index.html">
+                <li class="hover">Home</li>
+            </a>
+            <a href="./story.html" rel="noopener noreferrer">
+                <li class="hover active">Story</li>
+            </a>
+            <a href="./product.html" rel="noopener noreferrer">
+                <li class="hover">Products</li>
+            </a>
+            <a href="./faq.html" rel="noopener noreferrer">
+                <li class="hover">FAQs</li>
+            </a>
+            <a href="./contact.html" rel="noopener noreferrer">
+                <li class="hover">Contact</li>
+            </a>
         </ul>
         <span class="icons">
             <a href="./login.html"><i class="fa fa-user-o fa-lg hover" aria-hidden="true"></i></a>
@@ -38,11 +53,21 @@
     </header>
     <div class="drop_down">
         <ul>
-            <a href="./index.html"><li class="hover">Home</li></a>
-            <a href="./story.html" rel="noopener noreferrer"><li class="hover active">Story</li></a>
-            <a href="./product.html" rel="noopener noreferrer"><li class="hover">Products</li></a>
-             <a href="./faq.html" rel="noopener noreferrer"><li class="hover">FAQs</li></a>
-             <a href="./contact.html" rel="noopener noreferrer"><li class="hover">Contact</li></a>
+            <a href="./index.html">
+                <li class="hover">Home</li>
+            </a>
+            <a href="./story.html" rel="noopener noreferrer">
+                <li class="hover active">Story</li>
+            </a>
+            <a href="./product.html" rel="noopener noreferrer">
+                <li class="hover">Products</li>
+            </a>
+            <a href="./faq.html" rel="noopener noreferrer">
+                <li class="hover">FAQs</li>
+            </a>
+            <a href="./contact.html" rel="noopener noreferrer">
+                <li class="hover">Contact</li>
+            </a>
         </ul>
     </div>
     <div class="blue blue3">
@@ -65,7 +90,7 @@
                         <div class="name">Don</div>
                         <div class="pos">Product, VP</div>
                     </div>
-                    <div class="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></div class="button">
+                    <div class="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
                 </div>
                 <div class="card">
                     <img src="./images/profiles/profile2.jpeg" alt="">
@@ -73,7 +98,7 @@
                         <div class="name">Kelly</div>
                         <div class="pos">Marketing</div>
                     </div>
-                    <div class="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></div class="button">
+                    <div class="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
                 </div>
                 <div class="card">
                     <img src="./images/profiles/profile3.jpeg" alt="">
@@ -81,80 +106,117 @@
                         <div class="name">Marie</div>
                         <div class="pos">Founder</div>
                     </div>
-                    <div class="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></div class="button">
+                    <div class="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+    <div class="quotes-outer">
         <div class="quotes-container">
             <div class="q-title">
-                    <h1> Customer love, <span class="highlight"> Little</span> Fashion</h1>            </div>
+                <h2> Customer love,<br> <span class="highlight"> Little</span> Fashion</h2>
+            </div>
             <div class="q-body">
-                <p class="pos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore beatae delectus nesciunt maxime rerum dolorum tempore, itaque perferendis est animi esse at eos odit cum dolore quos officia eius.</p>
-                <div class="bcard">
-                    <img src="./images/profiles/profile1.jpeg" alt="">
-                    <p>
-                        <span class="name">Georger, </span>
-                        <span class="pos" >Digital Art Fashion</span>
-                    </p>
+                <div class="quotes">❝</div>
+                <!-- <p class="pos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore beatae delectus
+                    nesciunt maxime rerum dolorum tempore, .</p>
+                    <div class="bcard">
+                        <img src="./images/profiles/profile1.jpeg" alt="">
+                        <p>
+                            <span class="name">Georger, </span>
+                            <span class="pos">Digital Art Fashion</span>
+                        </p> -->
+                        <div id="frames">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="1">
-                <ul>
-                    <li>
-                        <h3>Little Fashion</h3>
-                    </li>
-                    <li>
-                        Copyright © 2022 Little Fashion
-                    </li>
-                    <li>
-                        Designed by Tooplate
-                    </li>
-                </ul>
-            </div>
-            <div class="2">
-                <ul>
-                    <li>
-                        <h3>Sitemap</h3>
+<br>
+        <div class="router">
+            <div onclick="framer(0)" class="dash"></div>
+            <div onclick="framer(1)" class="dash"></div>
+            <div onclick="framer(2)" class="dash"></div>
+            <div onclick="framer(3)" class="dash"></div>
+        </div>
+        <br><br><br>
+    <footer>
+        <div class="1">
+            <ul>
+                <li>
+                    <h3>Little Fashion</h3>
+                </li>
+                <li>
+                    Copyright © 2022 Little Fashion
+                </li>
+                <li>
+                    Designed by Tooplate
+                </li>
+            </ul>
+        </div>
+        <div class="2">
+            <ul>
+                <li>
+                    <h3>Sitemap</h3>
 
-                    </li>
-                    <li>
+                </li>
+                <li>
 
-                        Story
-                    </li>
-                    <li>
+                    Story
+                </li>
+                <li>
 
-                        Products
-                    </li>
-                    <li>
+                    Products
+                </li>
+                <li>
 
-                        Privacy policy
-                    </li>
-                    <li>
+                    Privacy policy
+                </li>
+                <li>
 
-                        FAQs
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                </ul>
-            </div>
-            <div class="three">
-                <ul>
-                    <li>
-                        <h3>Social</h3>
-                    </li>
-                    <div class="social">
-                        <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-github" aria-hidden="true"></i></li>
-                    </div>
-                </ul>
-            </div>
-        </footer>
-        <script src="script.js"></script>
+                    FAQs
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+        </div>
+        <div class="three">
+            <ul>
+                <li>
+                    <h3>Social</h3>
+                </li>
+                <div class="social">
+                    <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                </div>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    var frame=document.getElementById('frames')
+    var fimg=document.getElementById('fimg')
+    var dash=document.getElementsByClassName('dash')
+    var temp=0
+    frame.innerHTML=`<img id="fimg" src="./images/frame0.png" alt="frame0">`
+    dash[0].id="line"
+    function framer(i){
+        dash[i].id="line"
+        for(var j=0;j<4;j++){
+            if(i!=j){
+                dash[j].id=""
+            }
+        }
+        frame.innerHTML=`<img id="fimg" src="./images/frame${i}.png" alt="frame${i}">`
+    }
+    $(document).on("#frames",function(){
+  $("img").on("swipeleft",function(){
+    alert("You swiped left!");
+  });                       
+});
+    </script>
 </body>
 
 </html>

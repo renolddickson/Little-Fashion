@@ -23,7 +23,6 @@ a{
 li h3{
     color: white;
 }
-/* drop down */
 .drop_down{
     animation: growDown 0.2s ease-in-out forwards;
     display: none;
@@ -304,7 +303,7 @@ footer ul{
   
 @keyframes fade-image
 {
-  from {opacity: .6} 
+  from {opacity: .2} 
   to {opacity: 1}
 }
 .answer{
@@ -391,15 +390,7 @@ position: relative;
 left: -25%;
 text-align: center;
 }
-.quotes-container{
-min-height: 100vh;
-display: flex;
-width: 100%;
-flex-direction: column;
-justify-content: center;
-align-items: center;
 
-}
 .bcard img{
 height: 80px;
 border-radius: 50%;
@@ -410,7 +401,7 @@ font-size: 20px;
 }
 .bcard{
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 }
 .q-title{
@@ -447,7 +438,7 @@ form input{
     border: 1px solid rgba(128, 128, 128, 0.801);
     margin-bottom:20px;
     padding: 20px 5px;
-    height: 300px;
+    height: 200px;
     width: 400px;
 }
 form button{
@@ -526,6 +517,15 @@ textarea{
     border-radius: 5px;
     border: 2px solid rgba(128, 128, 128, 0.205);
 }
+.form form input{
+    height: 20px;
+    border: 1px solid rgba(168, 168, 168, 0.425);
+    padding-left: 10px;
+
+}
+.form form::placeholder{
+    color: rgb(168, 168, 168);
+}
 .contact{
     display: flex;
     justify-content: space-between;
@@ -555,6 +555,92 @@ textarea{
 }
 .bottom .one,.top .one{
     border-right: 1px solid rgba(128, 128, 128, 0.205);
+}
+.quotes-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quotes-container{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .quotes{
+        font-size: 100px;
+        color: #ff4400;
+    }
+    .router{
+        width: 100%;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dash{
+        width: 10%;
+        height: 20px;
+        border-top:1px solid #d0d1d1 ;
+        cursor: pointer;
+    }
+    .dash:hover{
+        border-top:1px solid black ;
+    }
+    #line{
+        width: 10%;
+        height: 20px;
+        border-top:1px solid black ;
+    }
+    #frames img{
+        width: 100%;
+        animation-name: slide-left;
+        animation-duration: 0.5s ;
+    }
+    .button i:hover{
+        color: black;
+    }
+@keyframes slide-left {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slide-right {
+  from {
+    opacity: 0.5;
+    margin-left: -50%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+.loading{
+    position: fixed;
+    top: -100vh;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    animation: slide_up 1.3s ease-out 0s;
+}
+@keyframes slide_up {
+    0%{
+        top:0vh;
+    }
+    60%{
+        top:0vh;
+    }
+    100%{
+        top:-100vh;
+    }
 }
 @media only screen and (max-width: 600px){
     .blue img{

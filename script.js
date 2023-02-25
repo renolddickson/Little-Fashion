@@ -74,8 +74,7 @@ function dropdown(i) {
     isopen=false
   }
 }
-function navdrop(){
-}
+
 
 var i=0
 slider(i)
